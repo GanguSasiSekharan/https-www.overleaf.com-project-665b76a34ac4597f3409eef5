@@ -1,0 +1,370 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\input{particulars}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\describe}[2]{
+    \csname #1@#2\endcsname
+}
+
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\titlesection{
+\begin{center}
+    {\Huge \scshape Gangu Sasi Sekharan Sadaram} \\ \vspace{1pt}
+    \small 
+    \raisebox{-0.1\height}\faPhone\ +91 99025 31555 ~ \href{mailto:\email}{\raisebox{-0.2\height}\faEnvelope\  sekharan1009@gmail.com} 
+    \href{\linkedin}{\raisebox{-0.2\height}\faLinkedin\ https://www.linkedin.com/in/gangu-sasi-sekharan-sadaram/} 
+
+    \vspace{1pt}
+    \href{\github}{\raisebox{-0.2\height}\faGithub\ \underline{\https://github.com/GanguSasiSekharan}}
+
+    \vspace{1pt}
+    \href{\ORCID}{\raisebox{-0.2\height}\faORCID Data-Camp
+    \underline{\https://www.datacamp.com/portfolio/sekharan1009}}
+
+    \vspace{1pt}
+    \href{\ORCID}{\raisebox{-0.2\height}\faORCID ORCID
+    \underline{\https://orcid.org/0000-0003-2745-4646}}
+    \vspace{-8pt}
+\end{center}
+}
+
+\begin{document}
+\titlesection
+\profileSummary
+
+\vspace{-10pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+      \resumeSubheading{National Institute of Technology, Karnataka - Surathkal}
+      {07/2018 \ -- 04/2022}
+      {Completed Bachelors in Mechanical Engineering, B.Tech}{}
+ \vspace{-5pt}
+
+      \resumeSubheading{FIITJEE Junior College - Visakhapatnam}
+      {04/2016 \ -- 04/2018}
+      {Completed Intermediate time (10+2), and prepared for IIT-JEE}{}
+\vspace{-5pt}
+      
+      \resumeSubheading{Timpamy School}
+      {04/2010 \ -- 03/2016}
+      {Completed school time here (until 10th Std)}{}
+  \resumeSubHeadingListEnd
+
+\newcommand{\renderExp}[1]{
+\resumeSubheading
+      {\csname #1@Company\endcsname}{\csname #1@Start\endcsname -- \csname #1@End\endcsname}
+      {\csname #1@Designation\endcsname}{\csname #1@Location\endcsname}
+      \csname #1@Highlights\endcsname
+}
+
+\vspace{-10pt}
+
+\section{Professional Experience}
+    \resumeSubHeadingListStart
+      \resumeSubheading{\textbf{Hong Kong and Shanghai Banking Corporation}}{07/2022 -- Present}
+      {HSBC UK Remediation - Analyst - Business Consulting} {Bangalore, Karnataka, India}
+      \vspace{1pt}
+             
+      Successfully automated numerous manual verification processes by developing pipelines with tools such as SAS and SQL, significantly accelerating redress by eliminating manual checks. 
+    \resumeSubHeadingListEnd
+% \vspace{-16pt}
+
+\vspace{-10pt}
+        \resumeSubheading{\textit{Tracing Customers address details}}
+        {09/2023 \ -- 12/2023}{}{}
+        \vspace{-18pt}
+        \begin{itemize}
+            \item Simplified the logic to receive the correct address of customers by developing a data pipeline.
+            \vspace{-6pt}
+            \item Deployed to trace back the customers who are either having incorrect address details or haven't updated their address details for a long time.
+        \end{itemize}
+        \vspace{-5pt}
+        
+        \resumeSubheading{\textit{CSEM Module and File-watcher}}
+        {08/2023 \ -- 05/2024} {}{}
+        \vspace{-18pt}
+        \begin{itemize}
+            \item Engineered an ETL pipeline to automate monthly raw data refresh; enhanced data accuracy by 99 percent and saved 30 hours of manual processing each month.
+            \vspace{-6pt}
+            \item Analyzed and processed raw data, extracting key markers and associated customer numbers, resulting in a 25 percent increase in data accuracy and reducing processing time by 30 percent.
+            \vspace{-6pt}
+            \item Implemented rigorous verification processes for customers exiting the bank, defaulting on loans, or flagged for fraud, which reduced financial risk exposure by 20 percent and improved compliance ratings.
+        \end{itemize}
+        \vspace{-5pt}
+        
+        \resumeSubheading{\textit{Sanctions File-watcher and load}}
+        {01/2024 \ -- 04/2024} {}{}
+        \vspace{-18pt}
+        \begin{itemize}
+            \item Constructed an advanced ETL pipeline for automating the weekly ingestion of sanctioned customers list; accelerated data handling by 55 percent and minimized potential compliance risks by 20 percent.
+            \vspace{-6pt}
+            \item Screened and blocked 150+ high-risk accounts using sanctioned list criteria; forwarded flagged accounts to the Sanctions team for further investigation, enhancing compliance and safeguarding company interests.
+            \vspace{-6pt}
+            \item Executed thorough screening processes to identify customers sanctioned by the UK Government or flagged by the Bank for Financial Crime, enhancing compliance by 20 percent.
+        \end{itemize}
+
+\vspace{-13pt}
+\section{Skills}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\vspace{-2pt}
+\resumeSubheading{Programming}{}{}{}
+{\location{Experienced:}}{} 
+SAS \textbullet{} 
+Teradata SQL \textbullet{} 
+MySQL \textbullet{} 
+Oracle SQL \textbullet{} 
+Python \textbullet{}
+Microsoft Excel \textbullet{}  \\
+\vspace{1pt}
+{\location{Familiar:}}{}
+JAVA \textbullet{} 
+C \textbullet{} 
+C++ \textbullet{} 
+GCP \textbullet{}
+BigQuery \textbullet{}
+Origin Labs \textbullet{}
+CATIA \textbullet{}
+AutoCAD \textbullet{}
+Fusion 360 \textbullet{}
+Power BI \textbullet{}\\
+\sectionspace
+
+
+\resumeSubheading{Tools/Applications}{}{}{}
+Visual Studio \textbullet{} 
+GIT-Hub \textbullet{} 
+Jupyter Notebook \textbullet{} 
+ANACONDA \textbullet{}
+MATLAB \textbullet{}
+ANSYS \textbullet{}
+Canva \textbullet{}
+\sectionspace
+
+\resumeSubheading{Operating Systems}{}{}{}
+Windows \textbullet{} 
+Linux - Ubuntu
+\sectionspace
+
+\vspace{-13pt}
+
+\section{Internship Experience}
+\resumeSubHeadingListStart
+      \resumeSubheading{\textbf{NMCAD Lab \-- IISc Bangalore} $|$ Research Intern}
+      {03/2021 \ -- 05/2022}{Work from Home \-- COVID}
+      
+      \begin{itemize}
+          \item Topic - Additive Manufacturing of Auxetic Materials.
+          \vspace{-2pt}
+          \item Modeled 4 Auxetic Structures.
+          \vspace{-2pt}
+          \item Analyzed and visualized experimental data using Origin Labs Plotter, collaborating with AMTF Lab, IIT-Bombay; provided actionable insights that increased research accuracy by 25 percent and accelerated project timelines by 15 percent.
+      \end{itemize} 
+      \vspace{-5pt}
+
+      \resumeSubheading{\textbf{Abyom SpaceTech and Defence Pvt. Ltd.} $|$ Research Intern}
+      {06/2021 \ -- 09/2021}{Work from Home \-- COVID}
+      
+      \begin{itemize}
+          \item Studied more about research methods and review paper writing.
+          \vspace{-2pt}
+          \item Wrote a review paper on the role of polymer based materials for aerospace applications.
+      \end{itemize}
+      \vspace{-2pt}
+      
+      \resumeSubheading{\textbf{Visakhapatnam Port Authority} $|$ Industrial Trainee}
+      {02/2021 \ -- 03/2021}{Visakhapatnam, Andhra Pradesh, India}
+      
+      \begin{itemize}
+          \item MV Section: Learned about the vehicles of BS3-Standard.
+          \vspace{-2pt}
+          \item MC Section: Studied on Fog Machine, Fork Lift(10T, 3.5T).
+          \vspace{-2pt}
+          \item Workshop: Learned more about Lathe Machine, different Machining Operations, Basics of Welding.
+      \end{itemize}
+      \vspace{-2pt}
+      
+      \resumeSubheading{\textbf{Space Technology and Aeronautical Rocketry} $|$ Design Intern}
+      {11/2020 \ -- 12/2020}{Virtual Internship}
+      
+      \begin{itemize}
+          \item Studied more about 3D modeling in model rocket design.
+          \vspace{-2pt}
+          \item Designed the Rocket Mount for the Model Rocket Static Test Pad, and the Recovery System(Parachutes) and Avionics Bay for the High-Powered Rocket.
+      \end{itemize}
+      \vspace{1pt}
+\resumeSubHeadingListEnd
+
+\newcommand{\renderHck}[1]{
+      \resumeProjectHeading
+      {\textbf{\csname #1@Title\endcsname} $|$ \csname #1@Position\endcsname}
+      {\csname #1@Date\endcsname}
+      \csname #1@Highlights\endcsname
+}
+
+\vspace{-15pt}
+\section{College Achievements}
+
+        \resumeSubheading{Mars Rover \ -- Team Zephyr}
+        {08/2021 \ -- 03/2022}{}{}
+        Team Captain | Qualified in the preliminary design review, in the University Rover Challenge 2022, conducted by the Mars Society.
+        \vspace{2pt}
+        
+        \resumeSubheading{Drona UAV \ -- Team Aeros}
+        {03/2021 \ -- 05/2021} {}{}
+        Mechanical Engineer | Achieved fourth place out of 26 teams, in IPAS Challenge 2021, Mars
+        Society South Asia Branch.
+        \vspace{2pt}
+        
+        \resumeSubheading{Design of Construct-o-Bot}
+        {11/2019 \ -- 02/2020} {}{}
+        Team lead / Designer | Led team of four overseeing all aspects of the design and testing of the Bot; done as part of the E-Yantra 2019-2020 robotics competition, conducted by IIT-Bombay.
+
+\vspace{-5pt}
+\section{Publications}
+\vspace{-5pt}
+\resumeSubHeadingListStart
+
+\vspace{5pt}
+
+      \resumeSubheading {21-12-2022 | \textit{Journal of Thermoplastic Composite Materials} }{}{}{}\vspace{-15pt}
+      
+      \textbf{Experimental investigation of the in-plane quasi-static mechanical behaviour of additively manufactured polyethylene tere-phthalate or
+organically modified mont-morillonite nanoclay
+composite auxetic structures}
+
+      \vspace{1pt}
+      Author(s): Vinyas Mahesh, Prasad Maladkar, Gangu SS
+Sadaram(Me), Athul Joseph, Vishwas Mahesh,
+Dineshkumar Harursampath
+      \vspace{1pt}
+
+      \resumeSubheading {30-11-2022 | \textit{IEOM Society International} }{}{}{}\vspace{-25pt}
+      \textbf{Active Vibration Control of Viscoelastic Core Sandwich Using PID, LQR and LQG Controllers} 
+      
+      \vspace{25pt}
+      
+      Author(s): Giridhar Ippili, Gangu Sasi Sekharan Sadaram(Me), Pappu Mouli, Rachana Ellur, Nagiredla Suryarao, Hemantha Kumar, Sharnappa Joladarashi  }
+      
+      \textbf{Active Vibration Control of MR Fluid Core Sandwich Using PID, LQR and LQG Controllers }     
+      Author(s): Giridhar Ippili, Gangu Sasi Sekharan Sadaram(Me), Pappu Mouli, Rachana Ellur, Nagiredla Suryarao, Hemantha Kumar, Sharnappa Joladarashi  }
+      \vspace{10pt}
+    
+\resumeSubHeadingListEnd
+
+
+\end{document}
